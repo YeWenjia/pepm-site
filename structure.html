@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <title>The ACM SIGPLAN - PEPM</title>
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
       background-color: #bfbfbf; 
     }
 
     .wrapper {
       max-width: 1100px;
-      margin: 30px auto; 
+      margin: 0 auto;
+      min-height: 100vh;
       background-color: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
     }
 
     .header {
@@ -37,6 +44,7 @@
 
     .container {
       display: flex;
+      flex: 1;
     }
 
     .sidebar {
@@ -113,7 +121,6 @@
       <div class="main-content">
       </div>
     </div>
-
 
     <div class="footer">
       <div>ACM SIGPLAN</div>
