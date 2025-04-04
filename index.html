@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>The ACM SIGPLAN - PEPM</title>
+  <!-- 引入 Inter 字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
@@ -10,12 +12,12 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #bfbfbf;
     }
 
     .wrapper {
-      max-width: 1250px; /* 增加宽度 */
+      max-width: 1250px;
       margin: 0 auto;
       min-height: 100vh;
       background-color: white;
@@ -24,7 +26,6 @@
       flex-direction: column;
     }
 
-    /* 响应式宽度适配大屏 */
     @media (min-width: 1600px) {
       .wrapper {
         max-width: 90%;
@@ -32,21 +33,22 @@
     }
 
     .header {
-      background-color: #0077cc;
+      background-color: #0077b3;
       color: white;
-      padding: 40px 10px;
+      padding: 60px 10px;
       text-align: center;
     }
 
     .header h1 {
-      margin: 10px 0 5px 0;
-      font-size: 24px;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
     }
 
     .header h2 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: normal;
+      margin: 10px 0 0 0;
+      font-size: 26px;
+      font-weight: 700;
     }
 
     .container {
@@ -57,16 +59,23 @@
     .sidebar {
       background-color: #ffffff;
       padding: 20px;
-      width: 250px;
-      font-size: 14px;
+      width: 350px;
+      font-size: 16px;
+      font-weight: 600;
       border-right: 1px solid #ccc;
+    }
+
+    .sidebar img {
+      width: 235px;
+      display: block;
+      margin: 0 auto 20px auto;
     }
 
     .sidebar a {
       display: block;
-      margin: 10px 0;
+      margin: 12px 0;
       color: #800080;
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: none;
     }
 
@@ -78,6 +87,8 @@
       padding: 20px;
       background-color: white;
       flex-grow: 1;
+      font-size: 15px;
+      line-height: 1.6;
     }
 
     .main-content a {
@@ -90,7 +101,7 @@
     }
 
     .footer {
-      background-color: #0077cc;
+      background-color: #0077b3;
       color: white;
       padding: 10px 20px;
       font-size: 12px;
@@ -119,6 +130,7 @@
 
     <div class="container">
       <div class="sidebar">
+        <img src="image.png" alt="ACM Logo">
         <a href="index.html">Home</a>
         <a href="https://popl24.sigplan.org/home/pepm-2025" target="_blank">PEPM 2026</a>
         <a href="structure.html">Organisation</a>

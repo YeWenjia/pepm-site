@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>The ACM SIGPLAN - PEPM</title>
+  <!-- 引入 Inter 字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
@@ -10,12 +12,12 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #bfbfbf;
     }
 
     .wrapper {
-      max-width: 1250px; /* 增加宽度 */
+      max-width: 1250px;
       margin: 0 auto;
       min-height: 100vh;
       background-color: white;
@@ -24,7 +26,6 @@
       flex-direction: column;
     }
 
-    /* 响应式宽度适配大屏 */
     @media (min-width: 1600px) {
       .wrapper {
         max-width: 90%;
@@ -32,21 +33,22 @@
     }
 
     .header {
-      background-color: #0077cc;
+      background-color: #0077b3;
       color: white;
-      padding: 40px 10px;
+      padding: 60px 10px;
       text-align: center;
     }
 
     .header h1 {
-      margin: 10px 0 5px 0;
-      font-size: 24px;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
     }
 
     .header h2 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: normal;
+      margin: 10px 0 0 0;
+      font-size: 26px;
+      font-weight: 700;
     }
 
     .container {
@@ -57,16 +59,23 @@
     .sidebar {
       background-color: #ffffff;
       padding: 20px;
-      width: 250px;
-      font-size: 14px;
+      width: 350px;
+      font-size: 16px;
+      font-weight: 600;
       border-right: 1px solid #ccc;
+    }
+
+    .sidebar img {
+      width: 235px;
+      display: block;
+      margin: 0 auto 20px auto;
     }
 
     .sidebar a {
       display: block;
-      margin: 10px 0;
+      margin: 12px 0;
       color: #800080;
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: none;
     }
 
@@ -78,6 +87,8 @@
       padding: 20px;
       background-color: white;
       flex-grow: 1;
+      font-size: 15px;
+      line-height: 1.6;
     }
 
     .main-content a {
@@ -90,7 +101,7 @@
     }
 
     .footer {
-      background-color: #0077cc;
+      background-color: #0077b3;
       color: white;
       padding: 10px 20px;
       font-size: 12px;
@@ -119,6 +130,7 @@
 
     <div class="container">
       <div class="sidebar">
+        <img src="image.png" alt="ACM Logo">
         <a href="index.html">Home</a>
         <a href="https://popl24.sigplan.org/home/pepm-2025" target="_blank">PEPM 2026</a>
         <a href="structure.html">Organisation</a>
@@ -126,6 +138,21 @@
       </div>
 
       <div class="main-content">
+        <p><strong>Partial Evaluation and Program Manipulation (PEPM)</strong> is an annual ACM SIGPLAN workshop. The workshop has a history going back to 1991 and has been held in conjunction with POPL every year since 2006. The origin of PEPM is in the discoveries of practically useful automated techniques for evaluating programs with only partial input. Over time, PEPM has broadened its scope to include a variety of research areas centered around semantics-based program manipulation — the systematic exploitation of treating programs not only as subject to black-box execution, but also as data structures that can be generated, analyzed, and transformed while establishing or maintaining important semantic properties.</p>
+
+        <p>This page is intended to serve as a general introduction to PEPM. It includes an overview of the workshop's goals and scope. For specific information about current or upcoming editions of PEPM, please visit the official conference websites. For suggestions or updates to this page, please contact <a href="https://yewenjia.github.io/">Wenjia Ye</a>.</p>
+
+        <h3>Scope</h3>
+        <p>The topic of interest for PEPM includes, but is not limited to:</p>
+
+        <ul>
+          <li>Semantics based and machine-learning based program synthesis and program optimisation.</li>
+          <li>Modelling, analysis, and transformation techniques for distributed and concurrent protocols and programs, such as session types, linear types, and contract specifications.</li>
+          <li>Program and model manipulation techniques such as: supercompilation, partial evaluation, fusion, on-the-fly program adaptation, active libraries, program inversion, slicing, symbolic execution, refactoring, decompilation, and obfuscation.</li>
+          <li>Techniques that treat programs/models as data objects including metaprogramming, generative programming, embedded domain-specific languages, program synthesis by sketching and inductive programming, staged computation, and model-driven program generation and transformation.</li>
+          <li>Program analysis techniques that are used to drive program/model manipulation such as: abstract interpretation, termination checking, binding-time analysis, constraint solving, type systems, automated testing and test case generation.</li>
+          <li>Application of the above techniques including case studies of program manipulation in real-world (industrial, open-source) projects and software development processes, descriptions of robust tools capable of effectively handling realistic applications, benchmarking. Examples of application domains include legacy program understanding and transformation, DSL implementations, visual languages and end-user programming, scientific computing, middleware frameworks and infrastructure needed for distributed and web-based applications, embedded and resource-limited computation, and security.</li>
+        </ul>
       </div>
     </div>
 
